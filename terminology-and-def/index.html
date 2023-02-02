@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title> JS1 - Terminology & Definitions </title>
+</head>
+<body>
+  <header>
+    <a href="../index.html">
+      <button> Back to main manu </button>
+    </a>
+  </header>
+
+  <div>
+    <h1> JS1 - Terminology & Definitions </h1>
+  </div>
+  
+  <section>
+    <h3> Name the three ways to declare a variable? </h3>
+    <p> - Three ways to declare a variable are: let, const, var. </p>
+
+    <h3> Which of the three variable declarations should you avoid and why? </h3>
+    <p> - You should avoid "var" becouse it can be accessed outside the block and accidentally redefined. </p>
+
+    <h3> What rules should you follow when naming variables? </h3>
+    <p> - You should follow CamelCase. </p>
+
+    <h3> What should you look out for when using the + operator with numbers and strings? </h3>
+    <p> - You should look out for how you want to add that number to a string. </p>
+
+    <h3> How does the % operator work? </h3>
+    <p> - Remainder operator returns the remainder left over when one operand is divided by a second operand. </p>
+
+    <h3> Explain the difference between == and === </h3>
+    <p> - Double Equals ( == ) checks for value equality only. The strict equality ( === ) operator checks whether 
+      its two operands are equal, returning a Boolean result. </p>
+
+    <h3> When would you receive a NaN result? </h3>
+    <p> - It can be used to check whether a number entered is a valid number or not a number. </p>
+
+    <h3> How do you increment and decrement a number? </h3>
+    <p> - To increment we use "++" to decrement we use "--". </p>
+
+    <h3> Explain the difference between prefixing and post-fixing increment/decrement. </h3>
+    <p> - The Postfix Form returns the original value of the variable, before the increment/decrement
+       The Prefix Form returns the value after the increment/decrement. </p>
+
+    <h3> What is operator precedence and how is it handled in JS? </h3>
+    <p> - Operator precedence determines how operators are parsed concerning each other. 
+      Operators with higher precedence become the operands of operators with lower precedence. </p>
+
+    <h3> How do you log information to the console? </h3>
+    <p> - In your script u use "console.log(HERE INSERT WHAT YOU WANT TO LOG)". </p>
+
+    <h3> What does unary plus operator do to string representations of integers? </h3>
+    <p> - The unary plus (+) operator precedes its operand and evaluates to its operand but attempts to convert it into a number, if it isn't already. </p>
+
+    <h3> What are the eight data types in JavaScript? </h3>
+    <p> - Eight data types in js are: undefined, null, boolean, number, bigint, string, symbol, and object.</p>
+
+    <h3> Which data type is NOT primitive? </h3>
+    <p> - The 'object' is a non-primitive data type in JavaScript. Arrays and Functions in JavaScript belong to the 'object' data type. </p>
+
+    <h3> What is the relationship between null and undefined? </h3>
+    <p> - It means null is equal to undefined but not identical. </p>
+
+    <h3> What is the difference between single, double, and backtick quotes for strings? </h3>
+    <p> - They are each used in different scenarios. </p>
+
+    <h3> What is the term for embedding variables/expressions in a string? </h3>
+    <p> - Strings that contain references to variables or expressions are called interpolated strings. </p>
+
+    <h3> Which type of quote lets you embed variables/expressions in a string? </h3>
+    <p> - " " , ' ', ` `</p>
+
+    <h3> How do you embed variables/expressions in a string? </h3>
+    <p> - let string = "string" </p>
+
+    <h3> How do you escape characters in a string? </h3>
+    <p> - You use backtick and a dollar sign with curly brackets like tihs: `${HERE}`</p>
+
+    <h3> What is the difference between the slice/substring/substr string methods? </h3>
+    <p> - slice() extracts parts of a string and returns the extracted parts in a new string. substr() extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters. substring() extracts parts of a string and returns the extracted parts in a new string.
+    </p>
+
+    <h3> What are the three logical operators and what do they stand for? </h3>
+    <p> - Common logical operators include AND, OR, and NOT. </p>
+
+    <h3> What are the comparison operators? </h3>
+    <p> - Comparison and Logical operators are used to test for true or false. </p>
+
+    <h3> What are truthy and falsy values? </h3>
+    <p> - Truthy values In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. Falsy values In JavaScript, a falsy value is a value that is considered false when encountered in a Boolean context. </p>
+
+    <h3> What are the falsy values in JavaScript? </h3>
+    <p> - A falsy value is something which evaluates to FALSE, for instance when checking a variable. There are only six falsey values in JavaScript: undefined , null , NaN , 0 , "" (empty string), and false of course. </p>
+
+    <h3> What are conditionals? </h3>
+    <p> - JavaScript conditionals are logical expressions that evaluate to either true or false. </p>
+
+    <h3> What is the syntax for an if/else conditional? </h3>
+    <p> 
+      if (condition) { <br>
+        //  block of code to be executed if the condition is true <br>
+      }  <br>
+      else { <br>
+      }
+    </p>
+
+    <h3> What is the syntax for a switch statement? </h3>
+    <p>
+      const expr = 'Papayas'; <br>
+        switch (expr) { <br>
+        case 'Oranges': <br>
+        console.log('Oranges are $0.59 a pound.'); <br>
+        break; <br>
+        case 'Mangoes': <br>
+        case 'Papayas': <br>
+        console.log('Mangoes and papayas are $2.79 a pound.'); <br>
+          // Expected output: "Mangoes and papayas are $2.79 a pound." <br>
+        break; <br>
+        default: <br>
+        console.log(`Sorry, we are out of ${expr}.` <br>
+        );
+      }
+    </p>
+
+    <h3> What is the syntax for a ternary operator? </h3>
+    <p> - ? : </p>
+
+    <h3> What is nesting? </h3>
+    <p> - Nesting is when you write something inside of something else. </p>
+
+    <h3> What are functions useful for? </h3>
+    <p> - In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want. </p>
+
+    <h3> How do you invoke a function? </h3>
+    <p> function myFunction() { <br>
+      console.log('Hello, world!'); <br>
+      } <br>
+      myFunction(); <br>
+    </p>
+
+    <h3> What are anonymous functions? </h3>
+    <p> - Functions without a name. </p>
+
+    <h3> What is function scope? </h3>
+    <p> - A block that is executed in that function and nowhere else. </p>
+
+    <h3> What are return values? </h3>
+    <p> - They are the values that function returns. </p>
+
+    <h3> What are arrow functions? </h3>
+    <p> - An arrow function expression is a compact alternative to a traditional function expression. </p>
+  </section>
+</body>
+</html>
+<!-- 
+1. Name the three ways to declare a variable?
+2. Which of the three variable declarations should you avoid and why?
+3. What rules should you follow when naming variables?
+4. What should you look out for when using the + operator with numbers and
+strings?
+5. How does the % operator work?
+6. Explain the difference between == and ===.
+7. When would you receive a NaN result?
+8. How do you increment and decrement a number?
+9. Explain the difference between prefixing and post-fixing increment/decrement
+operators.
+10. What is operator precedence and how is it handled in JS?
+11. How do you log information to the console?
+12. What does unary plus operator do to string representations of integers?
+13. What are the eight data types in JavaScript?
+14. Which data type is NOT primitive?
+15. What is the relationship between null and undefined?
+16. What is the difference between single, double, and backtick quotes for strings?
+17. What is the term for embedding variables/expressions in a string?
+18. Which type of quote lets you embed variables/expressions in a string?
+19. How do you embed variables/expressions in a string?
+20. How do you escape characters in a string?
+21. What is the difference between the slice/substring/substr string methods?
+22. What are the three logical operators and what do they stand for?
+23. What are the comparison operators?
+24. What are truthy and falsy values?
+25. What are the falsy values in JavaScript?
+26. What are conditionals?
+27. What is the syntax for an if/else conditional?
+28. What is the syntax for a switch statement?
+29. What is the syntax for a ternary operator?
+30. What is nesting?
+31. What are functions useful for?
+32. How do you invoke a function?
+33. What are anonymous functions?
+34. What is function scope?
+35. What are return values?
+36. What are arrow functions?
+-->
