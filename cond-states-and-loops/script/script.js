@@ -7,16 +7,20 @@ function largerInteger() {
   let x = document.getElementById("numberOne").value;
   let y = document.getElementById("numberTwo").value;
 
-  if(Number(x) > Number(y)) {
-    document.getElementById("odd-even-same").innerHTML = `${x}  >  ${y}`;
-    console.log(`X = ${x} > Y = ${y}`);
-  } else if (Number(x) < Number(y)) {
-    document.getElementById("odd-even-same").innerHTML = `${x}  <  ${y}`;
-    console.log(`X = ${x} <  Y = ${y}`);
+  if (x === "" || y === "") {
+      alert('Please enter both numbers')
   } else {
-    document.getElementById("odd-even-same").innerHTML = `${x}  =  ${y}`;
-    console.log(`X = ${x} = Y = ${y}`);
-  }
+    if(Number(x) > Number(y)) {
+      document.getElementById("odd-even-same").innerHTML = `${x}  >  ${y}`;
+      console.log(`X = ${x} > Y = ${y}`);
+    } else if (Number(x) < Number(y)) {
+      document.getElementById("odd-even-same").innerHTML = `${x}  <  ${y}`;
+      console.log(`X = ${x} < Y = ${y}`);
+    } else {
+      document.getElementById("odd-even-same").innerHTML = `${x}  =  ${y}`;
+      console.log(`X = ${x} = Y = ${y}`);
+    }
+  } 
 }
 
 
@@ -24,11 +28,15 @@ function largerInteger() {
 function evenOddNumber() {
   let integerNumber = document.getElementById("evenOddNumber").value;
 
-  if (integerNumber % 2 == 0) {
-    document.getElementById("even-or-odd").innerHTML = `${integerNumber} is EVEN`;
-    console.log(`The numbner ${integerNumber}  EVEN`);
+  if (integerNumber === "") {
+    alert('Please enter the number')
   } else {
-    document.getElementById("even-or-odd").innerHTML = `${integerNumber} is ODD`;
-    console.log(`The numbner ${integerNumber}  ODD`);
+    if (integerNumber % 2 == 0) {
+      document.getElementById("even-or-odd").innerHTML = `${integerNumber} is EVEN`;
+      console.log(`The numbner ${integerNumber}  EVEN`);
+    } else {
+      document.getElementById("even-or-odd").innerHTML = `${integerNumber} is ODD`;
+      console.log(`The numbner ${integerNumber}  ODD`);
+    }
   }
 }

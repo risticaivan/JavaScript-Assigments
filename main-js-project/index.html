@@ -19,26 +19,33 @@
   </header>
 
   <div id="input-div">
-    <input id="select" value=""  placeholder=" Select rock / paper / scissors ">
+    <input 
+      id="select" 
+      value=""  
+      placeholder=" Select rock / paper / scissors "
+    >
     <button onclick="playRound()"> Play </button>
   </div>
+
   <div class="game-info">
+    <h3> Outcome: </h3>
     <p id="tie"></p>
     <p id="player-got"></p>
     <p id="computer-got"></p>
   </div>
+
   <div class="result">
     <p id="player"></p>
     <p> VS </p>
     <p id="computer"></p>
   </div>
+
   <div id="five-rounds-div">
     <h2> 5 Rund match </h2>
     <div>
       <button onclick="game()"> Play 5 rounds </button>
     </div>
   </div>
-
 
   <script src="./script/script.js"></script>
 </body>

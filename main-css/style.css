@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  transition: 0.5s;
+  color: green;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+}
+
+body header h1 {
+  margin-top: 40px;
+  color: aliceblue;
+}
+
+section {
+  height: 300px;
+  width: 700px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(299deg, rgba(199,255,170,1) 6%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 71%, rgba(199,255,170,1) 100%);
+  box-shadow: 0px 0px 10px black;
+  border-radius: 25px;
+}

@@ -1,27 +1,28 @@
+// Counter and counter output
 let playerCounter = 0;
 let computerCounter = 0;
-let ePlayerCounter = document.getElementById('player').innerHTML = `Player ${playerCounter}`;
-let ePomputerCounter = document.getElementById('computer').innerHTML = `Computer ${computerCounter}`;
-
+let outputPlayerCounter = document.getElementById('player').innerHTML = `Player ${playerCounter}`;
+let outputPomputerCounter = document.getElementById('computer').innerHTML = `Computer ${computerCounter}`;
+// Getting the elemnts to output the result
 let playerGot = document.getElementById('player-got');
 let computerGot = document.getElementById('computer-got');
 let tieResult = document.getElementById('tie');
 
 function playRound(player, computer) {
-
+  // function computerPlay that randomly chooses the computer value
   function computerPlay() {
     const computerArray = ['rock','paper','scissors'];
     const computerArrayIndex = Math.floor(Math.random()*3); // we get random index 0-2
     const selection = computerArray[computerArrayIndex];
     return selection;
   }
-
+  // adding the value
   const playerSelection = document.getElementById('select').value;
   const computerSelection = computerPlay();
   console.log('--------- New Game ---------'); 
   console.log('Player:', playerSelection);
   console.log('Computer:', computerSelection);
-
+  // lowering the cases so we can compare them easier
   player = playerSelection.toLowerCase();
   computer = computerSelection.toLowerCase();
 
@@ -41,14 +42,14 @@ function playRound(player, computer) {
         playerGot.innerHTML = '';
         tieResult.innerHTML = '';
         console.log('Computer Won!');
-        computerCounter++
+        computerCounter++;
       }
       else {
         playerGot.innerHTML = 'Player won with  ' + player;
         computerGot.innerHTML = '';
         tieResult.innerHTML = '';
         console.log('Player won!');
-        playerCounter++
+        playerCounter++;
       }
     }
     else if(player == "scissors") {
@@ -57,14 +58,14 @@ function playRound(player, computer) {
         playerGot.innerHTML = '';
         tieResult.innerHTML = '';
         console.log('Computer Won!');
-        computerCounter++
+        computerCounter++;
       }
       else {
         playerGot.innerHTML = 'Player won with  ' + player;
         computerGot.innerHTML = '';
         tieResult.innerHTML = '';
         console.log('Player won!');
-        playerCounter++
+        playerCounter++;
       }
     }
     else if(player == 'paper') {
@@ -73,21 +74,21 @@ function playRound(player, computer) {
         playerGot.innerHTML = '';
         tieResult.innerHTML = '';
         console.log('Computer Won!');
-        computerCounter++
+        computerCounter++;
       }
       else {
         playerGot.innerHTML = 'Player won with  ' + player;
         computerGot.innerHTML = '';
         tieResult.innerHTML = '';
         console.log('Player won!');
-        playerCounter++
+        playerCounter++;
       }
     }
   } 
   else {
     alert('You must use words: Rock, Paper, Scissors');
   }
-
+  // loging the counter and adding counter in HTML
   console.log(`Player ${playerCounter} vs Computer ${computerCounter}`);
   document.getElementById('player').innerHTML = `Player - ${playerCounter}`;
   document.getElementById('computer').innerHTML = `Computer - ${computerCounter}`;
@@ -96,8 +97,8 @@ function playRound(player, computer) {
 /* Write a NEW function called game(). Call the playRound function inside of this one to
 play a 5 round game that keeps score and reports a winner or loser at the end.
 */
-
 function game() {
+  // Counter and player selection
   let roundCounter = 0;
   let playerSelection = document.getElementById('select').value;
 
@@ -112,4 +113,3 @@ function game() {
     alert('You must use words: Rock, Paper, Scissors');
   }
 }
-
