@@ -54,7 +54,7 @@ equalBtn.addEventListener('click', () => {
       currentResult.innerText = previousResult.innerText;
     }
     catch {
-      previousResult.innerText = 'ERROR ckeck the input';
+      previousResult.innerText = 'ERROR CHECK THE INPUT';
     }
   }
 })
@@ -81,7 +81,7 @@ window.addEventListener('keydown', (e) => {
         currentResult.innerText = previousResult.innerText;
       }
       catch {
-        previousResult.innerText = 'ERROR ckeck the input';
+        previousResult.innerText = 'ERROR CHECK THE INPUT';
       }
     }
   }
