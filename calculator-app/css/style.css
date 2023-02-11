@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, rgb(50, 34, 59), rgb(56, 75, 53));
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+body div .back-to-home {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.back-to-home:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.calculator-wrap {
+  border-radius: 5px;
+  margin-top: 50px;
+  width: 200px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, .3);
+}
+
+.display-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-previous,
+.display-current {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  height: 40px;
+  color: white;
+  margin-right: 5px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.display-previous {
+  font-size: 14px;
+  opacity: 70%;
+}
+
+.display-current {
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc-row {
+  display: flex;
+}
+
+.btns {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: unset;
+  box-shadow: inset 0 0 2px #000000;
+}
+
+.btns:hover {
+  background-color: rgba(187, 187, 187, 0.9);
+  box-shadow: inset 0 0 5px #000000;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.two-btns {
+  width: 100px;
+  border: unset;
+  box-shadow: inset 0 0 2px #000000;
+}
+
+.two-btns:hover {
+  background-color: rgba(255, 137, 59, 0.9);
+  box-shadow: inset 0 0 5px #000000;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.legend {
+  margin: 5px 0px 0px 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.legend p {
+  font-size: 12px;
+}
+
+.legend h4 {
+  margin: 2px 0px;
+  font-size: 12px;
+}

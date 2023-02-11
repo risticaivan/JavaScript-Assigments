@@ -16,7 +16,6 @@ function computerPlay() {
   return selection;
 }
 
-
 function playRound() {
   computerPlay();
   // adding the value and lowering the cases so we can compare them easier

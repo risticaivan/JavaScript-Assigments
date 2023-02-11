@@ -34,9 +34,10 @@ body header h1 {
 }
 
 section {
-  height: 300px;
+  height: auto;
   width: 700px;
   margin-top: 50px;
+  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
