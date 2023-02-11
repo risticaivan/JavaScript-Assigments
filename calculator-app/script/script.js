@@ -54,7 +54,7 @@ equalBtn.addEventListener('click', () => {
       currentResult.innerText = previousResult.innerText;
     }
     catch {
-      previousResult.innerText = 'ERROR use one decimal point';
+      previousResult.innerText = 'ERROR ckeck the input';
     }
   }
 })
@@ -81,7 +81,7 @@ window.addEventListener('keydown', (e) => {
         currentResult.innerText = previousResult.innerText;
       }
       catch {
-        previousResult.innerText = 'ERROR use one decimal point';
+        previousResult.innerText = 'ERROR ckeck the input';
       }
     }
   }
